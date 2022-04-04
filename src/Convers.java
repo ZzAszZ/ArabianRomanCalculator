@@ -25,7 +25,7 @@ public class Convers {
                 "LXXXI", "LXXXII", "LXXXIII", "LXXXIV", "LXXXV", "LXXXVI", "LXXXVII", "LXXXVIII", "LXXXIX", "XC",
                 "XCI", "XCII", "XCIII", "XCIV", "XCV", "XCVI", "XCVII", "XCVIII", "XCIX", "C"
         };
-        try {                                             // Ошибка отрицательное число
+        try {
             return roman[arResult];
         } catch (ArrayIndexOutOfBoundsException exception) {
             System.out.println("Roman can't be negative try again:");
