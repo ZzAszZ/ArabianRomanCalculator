@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Arabian {
     public static String[] example;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -14,8 +14,7 @@ public class Arabian {
         example = user_Input.split(" ");
 
         if (example.length > 3) {
-            System.err.println("Incorrect mathematics example a lot of symbols!!! ");
-            System.exit(0);
+            throw new Exception("Incorrect mathematics example a lot of symbols!!! ");
         }
 
 

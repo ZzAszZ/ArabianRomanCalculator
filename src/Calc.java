@@ -1,5 +1,5 @@
 public class Calc {
-    public static int calculeted(int a, int b, String c){
+    public static int calculeted(int a, int b, String c) throws Exception {
         if (a>0 && a<=10 && b>=0 && b<10) {
             if (c.equals("+")) {
                 return (a + b);
@@ -15,10 +15,8 @@ public class Calc {
             }
         }
         else {
-            System.err.println("Incorrect number format!!!");
-            System.exit(0);
+            throw new Exception("Incorrect number format!!!");
         }
-
         return 0;
     }
 }
