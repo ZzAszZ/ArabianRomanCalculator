@@ -16,9 +16,10 @@ public class Convers {
         };
     }
 
-    public static String convert(int arResult) throws CalcExeption {
+    public static String convert(int arResult) {
         if (arResult<=0) {
-            throw new CalcExeption("String");
+            System.err.println("Roman number cant be <= 0!!!");
+            System.exit(0);
         }
             else {
                 String[] roman = {"O", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX",
@@ -31,5 +32,6 @@ public class Convers {
         };
                 return roman[arResult];
         }
+        return null;
     }
 }
