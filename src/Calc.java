@@ -1,6 +1,6 @@
 public class Calc {
-    public static int calculeted(int a, int b, String c) {
-        if (a>0 && a<=10 && b>=0 && b<10) {  // Проверка на соответствие условий  диапазона ввода чисел
+    public static int calculeted(int a, int b, String c) throws CalcExeption {
+        if (a>0 && a<=10 && b>=0 && b<10) {
             if (c.equals("+")) {
                 return (a + b);
             }
@@ -15,8 +15,8 @@ public class Calc {
             }
         }
         else
-            System.out.println("Incorrect parameters");
-        return 0;
+            throw new CalcExeption(1);
 
+        return 0;
     }
 }
