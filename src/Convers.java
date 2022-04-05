@@ -1,6 +1,6 @@
 
 public class Convers {
-    public static int rta(String roman) {  // Перевод римского числа в Арабское
+    public static int rta(String roman) {
         return switch (roman) {
             case "I" -> 1;
             case "II" -> 2;
